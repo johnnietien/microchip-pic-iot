@@ -122,8 +122,8 @@ chmod +x ./ui/src/Config.js
 
 printf "${BLU}Deploying UI (this may take a few minutes)...\n${NC}"
 firebase deploy --only functions:recordMessage
-firebase deploy --only database
-firebase deploy --only hosting
+firebase deploy --only database,hosting
+# firebase deploy --only hosting
 
 printf "\n${GRN}**************************************\n\n" 
 printf "Setup complete!\n\n"
